@@ -107,31 +107,31 @@ void loop() {
 	}
 
 	//Modus 3
-    if( modus == 2){
+    	if( modus == 2){
     
-		//Jeden zweiten Neopixel in einer bestimmten Farbe aufleuchten
+	//Jeden zweiten Neopixel in einer bestimmten Farbe aufleuchten
         for(int i = 0; i < NUMPIXELS;i ++){
-			if(i % 2){
-				pixels.setPixelColor(i,pixels.Color(0,0,20));
-			} else {
-				pixels.setPixelColor(i,pixels.Color(10,10,0));
-			}
+		if(i % 2){
+			pixels.setPixelColor(i,pixels.Color(0,0,20));
+		} else {
+			pixels.setPixelColor(i,pixels.Color(10,10,0));
+		}
         }
         
         //Anzeigen            
         pixels.show();
         delay(500);
         
-		//Plaetze tauschen
-		for(int i = 0; i < NUMPIXELS;i ++){
-			if(i % 2){
-				pixels.setPixelColor(i,pixels.Color(10,10,10));
-			} else {
-				pixels.setPixelColor(i,pixels.Color(0,0,20));
-			}
+	//Plaetze tauschen
+	for(int i = 0; i < NUMPIXELS;i ++){
+		if(i % 2){
+			pixels.setPixelColor(i,pixels.Color(10,10,10));
+		} else {
+			pixels.setPixelColor(i,pixels.Color(0,0,20));
 		}
+	}
 		
-		//Anzeigen  
+	//Anzeigen  
         pixels.show();
         delay(500);       
 	}
